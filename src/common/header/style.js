@@ -19,7 +19,7 @@ export const Logo = styled.div`
   width: 100px;
   height: 56px;
   margin-left: 20px;
-  margin-top: 8px;
+  margin-top: 13px;
   background: url(${logoPic});
   background-size: contain;
   background-repeat: no-repeat;
@@ -165,7 +165,6 @@ export const Button = styled.div`
   border-radius: 19px;
   border: 1px solid #009966;
   font-size: 14px;
-  cursor: pointer;
   &.reg{
     color: #009966;
     margin-bottom: 9px;

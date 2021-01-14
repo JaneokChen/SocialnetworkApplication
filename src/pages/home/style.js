@@ -33,9 +33,11 @@ export const HomeRight = styled.div`
 `
 
 export const TopicWrapper = styled.div`
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin-left: -18px;
-  padding: 20px 0 10px 0;
+  padding: 0px 0 10px 0;
   border-bottom: 1px solid #dcdcdc;
 `
 
@@ -44,6 +46,7 @@ export const TopicItem= styled.div`
 	height: 32px;
 	line-height: 32px;
   margin-left: 18px;
+  margin-top: 10px;
   padding-right: 10px;
 	background: #f7f7f7;
 	font-size: 14px;
@@ -90,60 +93,103 @@ export const ListInfo = styled.div`
 
 export const RecommendWrapper = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
-  algin-content: space-between;
+  justify-content: flex-start;
   margin: 30px 0;
   width: 280px;
-  .reading{
+  font-size: 20px;
+  .firstRec{
     color:#3F4B3B;
   }
-  .music{
+  .secondRec{
     color: #4F86C6;
   }
-  .painting{
+  .thirdRec{
     color: #D499B9;
   }
-  .movie{
+  .forthRec{
     color:#F17F42;
   }
-  .language{
+  .fifthRec{
     color: #6E7783;
   }
-  .recite{
+  .sixthRec{
     color: #5CAB7D;
   }
-  .fitness{
+  .seventhRec{
     color: #5A9367;
   }
-  .dance{
+  .eigthRec{
     color: #44633F;
   }
-  .podcast{
+  .ninethRec{
     color: #3F4B3B;
   }
-  .local{
+  .tenthRec{
     color: #379392;
   }
 `
 
 export const RecommendItem = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 240px;
+  margin-top: 25px;
+  height: 20px;
   font-size: 16px;
   border-radius: 50%;
-  cursor: pointer;
 `
 
 export const WriterWraper = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   width: 278px;
+  padding: 20px 10px;
   border: 1px solid #dcdcdc;
   border-radius: 3px;
-  height: 300px;
-  line-height: 300px;
-  text-align: center;
+  font-size: 18px;
+  .writerPic{
+    width: 55px;
+    height: 55px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px #eee;
+    border-radius: 50%;
+  }
 `
+
+export const WriterItem = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  height: 40px;
+  margin-top: 20px;
+  color:#42c02e;
+  font-size:14px;
+  font-weight: bolder;
+`
+
+export const WriterText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 40px;
+  height: 40px;
+  margin-left: 5px;
+  .writerName{
+    color:#333;
+    font-size: 15px;
+  }
+  .writerLikes{
+    color:#969696;
+    font-size: 13px;
+    margin-top:5px;
+  }
+`
+
 export const LoadMore = styled.div`
 	width: 100%;
 	height: 40px;

@@ -22,8 +22,8 @@ export const Content = styled.div`
   }
   p{
     margin: 25px 0;
-    font-size: 16px;
-    ling-height: 30px;
+    font-size: 20px;
+    line-height: 30px;
   }
   b{
     font-weight: bold;
